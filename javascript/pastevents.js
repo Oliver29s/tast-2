@@ -6,7 +6,10 @@ for(let event of proximoEvento ){
 function eventosPasados(array,fecha){
     let acu =[]
     for(i = 0; i < array.length; i++){
-        acu.push(array[i])   
+        if(array[i].date < "2022-01-01"){
+            acu.push(array[i])
+        }
+        
     }
     return acu
 

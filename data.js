@@ -4,7 +4,7 @@
       _id: 1,
       "image":"https://amazingeventsapi.herokuapp.com/api/img/Feriadecomidas7.jpg",
       "name":"Collectivities Party",
-      "date":"22021-12-1",
+      "date":"2021-12-1",
       "description":"Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
       "category":"Food Fair",
       "place":"Room A",
