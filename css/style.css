@@ -1,0 +1,46 @@
+#exampleInputEmail1{
+    resize: none;
+}
+#exampleInputPassword1{
+    resize: none;
+   
+}
+#exampleInput{
+    resize: none;
+}
+.card{
+    border-radius: 0px 25px 0px 25px;
+}
+.card-img-top{
+    border-radius: 0px 25px 0px 25px;
+}
+main{
+    background: #E8CBC0;  
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+background: linear-gradient(to right, #636FA4, #E8CBC0); 
+
+}
+.navbar{
+    background: #E8CBC0;  
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+background: linear-gradient(to right, #636FA4, #E8CBC0); 
+
+}
+.container-fluid{
+    background: #E8CBC0; 
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+background: linear-gradient(to right, #636FA4, #E8CBC0);
+
+}
+.card2{
+   
+    flex-direction: row !important;
+}
+.card-body{
+    
+}
+.main1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
