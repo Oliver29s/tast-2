@@ -5,11 +5,8 @@ for(let event of proximoEvento ){
 }
 function todosLosEventos(array,fecha){
     let acu =[]
-    for(i = 0; i < array.length; i++){
-        if(array[i].date < "2022-01-01" || array[i].date > "2022-01-01" ){
-            acu.push(array[i])
-        }
-        
+    for(i = 0; i < array.length; i++){ 
+            acu.push(array[i])      
     }
     return acu
 
