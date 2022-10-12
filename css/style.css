@@ -3,10 +3,13 @@
 }
 #exampleInputPassword1{
     resize: none;
-   
+
 }
 #exampleInput{
     resize: none;
+}
+.container-fluid{
+    background-color: aqua !important;
 }
 .card{
     border-radius: 0px 25px 0px 25px;
@@ -15,29 +18,29 @@
     border-radius: 0px 25px 0px 25px;
 }
 main{
-    background: #E8CBC0;  
-background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
-background: linear-gradient(to right, #636FA4, #E8CBC0); 
-
-}
-.navbar{
-    background: #E8CBC0;  
-background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
-background: linear-gradient(to right, #636FA4, #E8CBC0); 
-
-}
-.container-fluid{
-    background: #E8CBC0; 
-background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: #E8CBC0;
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
 background: linear-gradient(to right, #636FA4, #E8CBC0);
 
 }
+/* .navbar{
+    background: #E8CBC0;
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
+background: linear-gradient(to right, #636FA4, #E8CBC0);
+
+} */
+.container-fluid{
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .card2{
-   
+
     flex-direction: row !important;
 }
 .card-body{
-    
+
 }
 .main1{
     flex-direction: column;

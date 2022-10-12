@@ -39,7 +39,7 @@ function proximosEventos(array,fecha){
 }
  function imprimirEventos(proximoEvento,conttenedor){
     conttenedor.innerHTML += `
-            <div class=" card p-1" style="width: 18rem; ">
+            <div class=" card p-1" style="width: 25rem; ">
                 <img src="${proximoEvento.image}" class="card-img-top" alt="imagen1">
                 <div class="card-body">
                     <h5 class="card-title">${proximoEvento.name}</h5>
