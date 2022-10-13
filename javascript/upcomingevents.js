@@ -1,59 +1,42 @@
-const conttenedor = document.getElementById("conttenedor")
-const proximoEvento = proximosEventos(events,"date")
-for(let event of proximoEvento ){
-    imprimirEventos(event,conttenedor)
+const contenedor2 = document.getElementById("contenedor2")
+
+
+
+let fecha = Date.parse(objeto.currentDate)
+let data = objeto.events
+function filtrarEventosFuturo (data,fecha) {
+   let filtrado = data.filter(function(item) {return Date.parse(item.date) > fecha } )
+    return filtrado 
 }
 
-
-
-// conttenedor.innerHTML += `
-//             <div class=" card p-1" style="width: 18rem; ">
-//                 <img src="${proximoEvento[0].image}" class="card-img-top" alt="imagen1">
-//                 <div class="card-body">
-//                     <h5 class="card-title">${proximoEvento[0].name}</h5>
-//                     <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the
-//                         whole family.
-//                     </p>
-//                     <div class="d-flex justify-content-between">
-//                         <h6>Price: 5</h6>
-//                         <a href="#" class="btn btn-primary">Details</a>
-
-//                     </div>
-//                 </div>
-//             </div>
-// `
+let arrayFiltrado = filtrarEventosFuturo (data,fecha)
 
 
 
-
-function proximosEventos(array,fecha){
-    let acu =[]
-    for(i = 0; i < array.length; i++){
-        if(array[i].date > "2022-01-01"){
-            acu.push(array[i])
-        }
-        
-    }
-    return acu
-
+function imprimirEventos(array,contenedor){
+   for (let i = 0; i < array.length; i++)
+    contenedor.innerHTML += 
+   `
+               <div class=" card p-1" style="width: 25rem; ">
+                   <img src="${array[i].image}" class="card-img-top" alt="imagen1">
+                   <div class="card-body">
+                       <h5 class="card-title">${array[i].name}</h5>
+                       <p class="card-text">${array[i].description}</p>    
+                       <div class="d-flex justify-content-between">
+                           <h6>Price: ${array[i].price}</h6>
+                           <a href="#" class="btn btn-primary">Details</a>
+   
+                       </div>
+                   </div>
+               </div>
+   `
 }
- function imprimirEventos(proximoEvento,conttenedor){
-    conttenedor.innerHTML += `
-            <div class=" card p-1" style="width: 25rem; ">
-                <img src="${proximoEvento.image}" class="card-img-top" alt="imagen1">
-                <div class="card-body">
-                    <h5 class="card-title">${proximoEvento.name}</h5>
-                    <p class="card-text">${proximoEvento.description}
-                    </p>
-                    <div class="d-flex justify-content-between">
-                        <h6> Price: ${proximoEvento.price}</h6>
-                        <a href="#" class="btn btn-primary">Details</a>
+imprimirEventos(arrayFiltrado,contenedor2)
 
-                    </div>
-                </div>
-            </div>
-`
 
- }
+
+
+
+
  
- 
+
